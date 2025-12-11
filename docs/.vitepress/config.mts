@@ -22,8 +22,5 @@ export default defineConfig({
       }
     ],
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/usc-swug' }
-    ]
   }
 })
