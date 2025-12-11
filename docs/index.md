@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Mechanica"
   text: "Course Notes for Mechanical Engineering (BS)"
-  tagline: My great project tagline
+  tagline: Basta Tres Lang!
   actions:
     - theme: brand
       text: Markdown Examples
