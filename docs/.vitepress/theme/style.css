@@ -1,0 +1,80 @@
+/* ==============================================
+   GLOBAL ARCHITECTURE
+   ============================================== */
+:root {
+  /* Base Font Size */
+  font-size: 18px;
+
+  /* Sharp "CAD" Edges */
+  --vp-button-alt-border-radius: 0px;
+  --vp-button-brand-border-radius: 0px;
+  --vp-code-block-bg: #f1f3f5;
+
+  /* Light Mode Palette: "Technical" Feel */
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-alt: #f8f9fa;
+  --vp-c-bg-soft: #f1f3f5;
+
+  /* Brand Colors grounded in DA291C */
+  --vp-c-brand: #DA291C;
+  --vp-c-brand-1: #DA291C;
+  --vp-c-brand-2: #B91910; /* Darker shade for interaction */
+  --vp-c-brand-3: #960F08; /* Even darker shade */
+  --vp-c-brand-light: #F84E43;
+  --vp-c-brand-dark: #B91910;
+  --vp-c-brand-soft: #ffeeed; /* Very light background tint */
+
+  /* Text Colors */
+  --vp-c-text-1: #212529; /* High contrast dark grey */
+  --vp-c-text-2: #495057;
+  --vp-c-text-3: #868e96;
+
+  /* Borders */
+  --vp-c-border: #dee2e6;
+  --vp-c-divider: #e9ecef;
+
+  /* Button Overrides */
+  --vp-button-brand-text: #ffffff;
+  --vp-button-brand-bg: var(--vp-c-brand);
+  --vp-button-brand-hover-bg: var(--vp-c-brand-dark);
+
+  /* Home Hero Name */
+  --vp-home-hero-name-color: var(--vp-c-brand);
+  --vp-home-hero-name-background: transparent;
+}
+
+
+/* ==============================================
+  NAVIGATION
+  ============================================== */
+
+.VPNavBar {
+  border-bottom: 1px solid var(--vp-c-divider) !important;
+}
+
+.VPNavBar .text,
+.VPNavBar .title,
+.VPNavBar a {
+  font-weight: 700 !important;
+  font-size: 1.0em !important;
+}
+
+/* Increase logo size */
+.VPNavBarTitle .logo {
+  height: 48px !important; /* Adjust this value as needed */
+  width: auto !important;  /* Maintains aspect ratio */
+}
+
+/* ==============================================
+  SIDEBAR
+  ============================================== 
+  */
+
+.VPSidebarItem.level-1 .text,
+.VPSidebarItem.level-2 .text,
+.VPSidebarItem.level-3 .text,
+.VPSidebarItem.level-4 .text {
+  text-transform: none !important;
+  letter-spacing: 0px;
+  font-weight: 400;
+}
