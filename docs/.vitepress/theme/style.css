@@ -8,26 +8,26 @@
   /* Sharp "CAD" Edges */
   --vp-button-alt-border-radius: 0px;
   --vp-button-brand-border-radius: 0px;
-  --vp-code-block-bg: #f1f3f5;
+  --vp-code-block-bg: #fff1f0;
 
-  /* Light Mode Palette: "Technical" Feel */
-  --vp-c-bg: #ffffff;
-  --vp-c-bg-alt: #f8f9fa;
-  --vp-c-bg-soft: #f1f3f5;
+  /* Light Mode Palette: "Pastel" Feel */
+  --vp-c-bg: #fffdfc;
+  --vp-c-bg-alt: #fff5f5;
+  --vp-c-bg-soft: #ffebe9;
 
   /* Brand Colors grounded in DA291C */
   --vp-c-brand: #DA291C;
   --vp-c-brand-1: #DA291C;
-  --vp-c-brand-2: #B91910; /* Darker shade for interaction */
-  --vp-c-brand-3: #960F08; /* Even darker shade */
-  --vp-c-brand-light: #F84E43;
-  --vp-c-brand-dark: #B91910;
-  --vp-c-brand-soft: #ffeeed; /* Very light background tint */
+  --vp-c-brand-2: #ff8fa3; /* Pastel Pink/Red for interaction */
+  --vp-c-brand-3: #ffb3c1; /* Lighter Pastel */
+  --vp-c-brand-light: #ffc9c9;
+  --vp-c-brand-dark: #cc2418;
+  --vp-c-brand-soft: #fff0f0; /* Very light pastel background tint */
 
-  /* Text Colors */
-  --vp-c-text-1: #212529; /* High contrast dark grey */
-  --vp-c-text-2: #495057;
-  --vp-c-text-3: #868e96;
+  /* Text Colors - Softer than pure black */
+  --vp-c-text-1: #4a4a4a; /* Soft charcoal */
+  --vp-c-text-2: #757575;
+  --vp-c-text-3: #a0a0a0;
 
   /* Borders */
   --vp-c-border: #dee2e6;
@@ -36,7 +36,7 @@
   /* Button Overrides */
   --vp-button-brand-text: #ffffff;
   --vp-button-brand-bg: var(--vp-c-brand);
-  --vp-button-brand-hover-bg: var(--vp-c-brand-dark);
+  --vp-button-brand-hover-bg: #ff758f; /* Pop of pastel on hover */
 
   /* Home Hero Name */
   --vp-home-hero-name-color: var(--vp-c-brand);
