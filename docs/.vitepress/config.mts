@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { getContent } from './utils'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -45,5 +46,23 @@ export default defineConfig({
       }
     ],
 
+  },
+  vite: {
+    plugins: [
+      {
+        name: 'vitepress-modify-md',
+        enforce: 'pre',
+        transform(code, id) {
+            if (id.includes("courses") == true) {
+              return code + "\n" + getContent(id)
+            } else{
+              return code
+            }
+        }
+      }
+    ]
+  },
+  markdown: {
+    math: true
   }
 })
