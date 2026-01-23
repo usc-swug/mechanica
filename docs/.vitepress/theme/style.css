@@ -78,3 +78,37 @@
   letter-spacing: 0px;
   font-weight: 400;
 }
+
+/* ==============================================
+  FEATURES (Overrides for vitepress-carbon component)
+  ============================================== */
+
+.VPFeature {
+  border: 2px solid var(--vp-c-divider) !important; /* "Technical" border TODO: Find the right amount of thickness */
+  border-radius: 6px;
+  background-color: var(--vp-c-bg-soft);
+}
+
+.VPFeature:hover {
+  border-color: var(--vp-c-brand) !important;
+  background-color: #fff;
+  box-shadow: 6px 6px 0px var(--vp-c-brand-light); /* "Hard" technical shadow */
+  transform: translate(-2px, -2px); /* Lift effect */
+  z-index: 10;
+}
+
+.VPFeature .icon {
+  border-radius: 50%;
+  background-color: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-dark);
+  border: none;
+}
+
+.VPFeature .title {
+  color: var(--vp-c-brand-dark);
+}
+
+.VPFeature .details {
+  color: var(--vp-c-text-2);
+}
+
