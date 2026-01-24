@@ -28,8 +28,8 @@ function fetchDocumentIds() {
 
 
 function fetchCredentials() {
-  // Use environment variables, if not found, fallback to local file.
   const credentials = process.env.GCP_CREDENTIALS || fs.readFileSync('credentials.json', 'utf8');
+  console.log('DEBUG: GCP_CREDENTIALS exists:', !!process.env.GCP_CREDENTIALS);
   return JSON.parse(credentials);
 }
 
