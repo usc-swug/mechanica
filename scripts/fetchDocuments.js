@@ -27,11 +27,16 @@ function fetchDocumentIds() {
 }
 
 
+function fetchCredentials() {
+  // Use environment variables, if not found, fallback to local file.
+  const credentials = process.env.GCP_CREDENTIALS || fs.readFileSync('credentials.json', 'utf8');
+  return JSON.parse(credentials);
+}
+
 async function downloadAndConvert(documentId) {
-  // 1. AUTHENTICATION (Using a Service Account key file for this example)
-  // You can also use OAuth2 if running locally with user credentials
+  // 1. AUTHENTICATION
   const auth = new google.auth.GoogleAuth({
-    keyFile: 'credentials.json', // TODO: use secrets
+    credentials: fetchCredentials(),
     scopes: ['https://www.googleapis.com/auth/drive.readonly'],
   });
 
