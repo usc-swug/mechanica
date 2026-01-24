@@ -31,7 +31,7 @@ export default defineConfig({
         items: [
           { text: 'What is Mechanica?', link: '/introduction/about' },
           { text: 'Contributions', link: '/introduction/contributions' },
-          { text: 'Related Resources', link: '/introduction/resources' }
+          { text: 'Resources', link: '/introduction/resources' }
         ]
       },
       { 
@@ -55,7 +55,7 @@ export default defineConfig({
         transform(code, id) {
             if (id.includes("courses") == true) {
               return code + "\n" + getContent(id)
-            } else{
+            } else {
               return code
             }
         }
