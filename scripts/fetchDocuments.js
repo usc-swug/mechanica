@@ -95,8 +95,19 @@ async function downloadAndConvert(documentId) {
   console.log('✅ Done! Markdown and images saved.');
 }
 
+// MAIN EXECUTION
 
-const documentIds = fetchDocumentIds();
-for (const docId of Object.values(documentIds)) {
-  downloadAndConvert(docId).catch(console.error);
+main();
+function main() {
+  if (!fs.existsSync(OUTPUT_DIR)) {
+    fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+  }
+  if (!fs.existsSync(IMAGE_DIR)) {
+    fs.mkdirSync(IMAGE_DIR, { recursive: true });
+  }
+
+  const documentIds = fetchDocumentIds();
+  for (const docId of Object.values(documentIds)) {
+    downloadAndConvert(docId).catch(console.error);
+  }
 }
