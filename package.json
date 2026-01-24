@@ -1,14 +1,21 @@
 {
   "devDependencies": {
+    "@types/node": "^25.0.10",
+    "@types/turndown": "^5.0.6",
     "markdown-it-mathjax3": "^4.3.2",
     "vitepress": "^2.0.0-alpha.15"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "docs:fetch": "node scripts/fetchDocuments.js"
   },
   "dependencies": {
+    "googleapis": "^170.1.0",
+    "js-yaml": "^4.1.1",
+    "mammoth": "^1.11.0",
+    "turndown": "^7.2.2",
     "vitepress-carbon": "^1.5.0"
   }
 }

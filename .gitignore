@@ -3,3 +3,7 @@ docs/.vitepress/cache
 node_modules/
 .DS_Store
 *.code-workspace
+*.env
+credentials.json
+docs/public/images/*
+docs/notes/*
