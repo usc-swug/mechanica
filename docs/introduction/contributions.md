@@ -6,18 +6,18 @@ Before doing anything, read our [Code of Conduct](https://github.com/usc-swug/me
 
 There are two ways to contribute to **Mechanica**. 
 
-## Method 1 (Google Documents)
+## Notes (Google Documents)
 
-This method is used for contribution to the notes section of each course.
+This method is used for contribution to the *notes section* of each course.
 
+1. **Find Google Document**: Find the corresponding google document of the course that you want to contribute to. The links can be found [here](../introduction/resources/#Google)
+2. **Request Access**: Contact [us](../introduction/about/#Contact) to get **editor** access to the relevant Google Documents. By default you should have commenter permissions.
+3. **Suggest Edits**: If you don't have editor access, use the "Suggesting" mode to propose changes to existing text.
+4. **Comment**: Leave comments for discussion on specific sections.
 
-1. **Request Access**: Contact [us](../introduction/about/#Contact) to get **editor** access to the relevant Google Documents. By default you should have commenter permissions.
-2. **Suggest Edits**: If you don't have editor access, use the "Suggesting" mode to propose changes to existing text.
-3. **Comment**: Leave comments for discussion on specific sections.
+## Markdown (GitHub)
 
-## Method 2 (GitHub)
-
-This is the standard workflow for code changes and technical documentation updates.
+This is the standard workflow for changes with the raw markdown files of each page.
 
 1. **Fork the Repository**: Create a personal copy of the repository on GitHub.
 2. **Clone Electronically**: Download the repository to your local machine.
