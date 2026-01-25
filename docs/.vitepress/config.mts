@@ -46,6 +46,11 @@ export default defineConfig({
       }
     ],
 
+    editLink: {
+      pattern: 'https://github.com/usc-swug/mechanica/edit/main/docs/:path',
+      text: 'Edit this page on GitHub.'
+    }
+
   },
   vite: {
     plugins: [
