@@ -1,3 +1,6 @@
+---
+editLink: false
+---
 # Resources
 
 ## Google Document Links

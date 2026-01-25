@@ -1,9 +1,12 @@
+---
+editLink: false
+---
 # Contributions
 ::: warning
 Before doing anything, read our [Code of Conduct](https://github.com/usc-swug/mechanica/blob/d64e91cea619d0aacdfc6d0ebdbe2f4e9dd5e44e/.github/CODE_OF_CONDUCT.md).
 :::
 
-Mechanica is a notes repository built by students for students. As such, it requires contributions by everyone in order to keep course-related information to be available.
+Mechanica is a notes repository built by students for students. As such, it requires contributions by everyone in order to keep course-related information available.
 We welcome contributions from everyone to help improve this resource for the community. 
 
 If you want to help out the community, there are two ways to contribute to **Mechanica**. 

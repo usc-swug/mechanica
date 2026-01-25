@@ -1,3 +1,6 @@
+---
+editLink: false
+---
 # What is Mechanica?
 **Mechanica** is a notes repository for courses under the Bachelor's of Science in Mechanical Engineering. This is a community project that is built through the contributions of the students studying in this programme.
 
