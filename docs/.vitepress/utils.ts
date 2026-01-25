@@ -2,22 +2,34 @@ import * as fs from 'fs';
 import * as yaml from 'js-yaml';
 import path from 'path';
 
-export function getContent(courseFilePath: string): string {
-  // TODO: Finish
-  
-  const courseCodeMatch = courseFilePath.match(/courses\/([a-z0-9]+)/i);
+
+function getCourseCode(filePath: string): string {
+  const courseCodeMatch = filePath.match(/courses\/([a-z0-9]+)/i);
   const courseCode = courseCodeMatch ? courseCodeMatch[1] : '';
+  return courseCode;
+}
+
+
+function getDocumentId(courseCode: string): string {
   // Obtain document id using courseCode in yaml file
-  const filePath = path.resolve(process.cwd(), 'documentId.yaml');
+  const configFilePath = path.resolve(process.cwd(), 'documentId.yaml');
   let documentId: string | undefined;
 
   try {
-    const fileContents = fs.readFileSync(filePath, 'utf8');
+    const fileContents = fs.readFileSync(configFilePath, 'utf8');
     const data = yaml.load(fileContents) as Record<string, string>;
     documentId = data[courseCode];
+    return documentId;
   } catch (e) {
     console.error('Error reading YAML file:', e);
+    return '' // TODO: Add link to 404 page.
   }
+}
+
+
+export function getContent(courseFilePath: string): string {
+  const courseCode = getCourseCode(courseFilePath)
+  const documentId = getDocumentId(courseCode)
 
   if (!documentId) {
     return `::: warning Under Construction

@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import { getContent } from './utils'
+import { getContent, getLink } from './utils'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -7,6 +7,7 @@ export default defineConfig({
   title: "Mechanica",
   description: "Course Notes for Mechanical Engineering (BS)",
   base: "/mechanica/",
+  cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.png',
@@ -49,10 +50,9 @@ export default defineConfig({
     ],
 
     editLink: {
-      pattern: 'https://github.com/usc-swug/mechanica/edit/main/docs/:path',
-      text: 'Edit this page on GitHub.'
+      text: 'Edit this page on GitHub.',
+      pattern: 'https://github.com/usc-swug/mechanica/edit/main/docs/:path'  // TODO: Find a way to redirect to the google documents instead.
     }
-
   },
   vite: {
     plugins: [
