@@ -37,6 +37,8 @@ export default defineConfig({
       { 
         text: 'Courses',
         items: [
+          { text: 'Calculus I', link: '/courses/em1101' },
+          { text: 'Calculus II', link: '/courses/em1202' },
           { text: 'Statics of Rigid Bodies', link: '/courses/mes2103' },
           { text: 'Statics of Deformable Bodies', link: '/courses/mes2204' },
           { text: 'Fluid Mechanics', link: '/courses/me2208' },

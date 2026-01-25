@@ -30,7 +30,7 @@ export function getContent(courseFilePath: string): string {
     } catch (e) {
       console.error('Error reading Markdown file:', e);
       return `::: warning Under Construction
-      Markdown file not found for document ID: ${documentId}`;
+      Markdown file not found for course code: ${courseCode}`;
     }
   }
 }
