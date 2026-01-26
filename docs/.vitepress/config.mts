@@ -1,5 +1,10 @@
 import { defineConfig } from 'vitepress'
-import { getContent, getLink } from './utils'
+import { getContent } from './utils'
+import fs from 'fs'
+import yaml from 'js-yaml'
+
+const editLinks = yaml.load(fs.readFileSync('documentId.yaml', 'utf8')) as Record<string, string>
+
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -50,9 +55,21 @@ export default defineConfig({
     ],
 
     editLink: {
-      text: 'Edit this page on GitHub.',
-      pattern: 'https://github.com/usc-swug/mechanica/edit/main/docs/:path'  // TODO: Find a way to redirect to the google documents instead.
-    }
+      text: 'Edit this page.',
+      pattern: (new Function('payload', `
+        const { filePath } = payload;
+        const links = ${JSON.stringify(editLinks)};
+        const match = filePath.match(/^courses\\/([a-z0-9]+)\\.md$/i);
+        if (match) {
+          const courseCode = match[1];
+          const docId = links[courseCode];
+          if (docId) {
+            return 'https://docs.google.com/document/d/' + docId + '/edit';
+          }
+        }
+        return 'https://github.com/usc-swug/mechanica/edit/main/docs/' + filePath;
+      `)) as any
+    },
   },
   vite: {
     plugins: [

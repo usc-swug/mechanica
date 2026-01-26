@@ -22,7 +22,7 @@ function getDocumentId(courseCode: string): string {
     return documentId;
   } catch (e) {
     console.error('Error reading YAML file:', e);
-    return '' // TODO: Add link to 404 page.
+    return 'Unknown' // TODO: Add link to 404 page.
   }
 }
 
