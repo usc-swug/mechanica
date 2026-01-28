@@ -37,7 +37,7 @@ export default defineConfig({
         items: [
           { text: 'What is Mechanica?', link: '/introduction/about' },
           { text: 'Contributions', link: '/introduction/contributions' },
-          { text: 'Resources', link: '/introduction/resources' }
+          { text: 'General Resources', link: '/introduction/resources' }
         ]
       },
       { 
