@@ -1,4 +1,4 @@
-# Thermodynamics I
+# References
 
 ## Constants and Conversions
 
@@ -86,6 +86,4 @@
 | **Air** | $C_p = 0.24 \frac{\text{BTU}}{\text{lb}\cdot R}$ <br> $C_v = 0.17 \frac{\text{BTU}}{\text{lb}\cdot R}$ <br> $R = 0.287 \frac{\text{kJ}}{\text{kg}\cdot K}$ <br> $R = 53.34 \frac{\text{ft}\cdot\text{lb}}{\text{lb}\cdot R}$ <br> $k = 1.4 \text{ (cold)}, 1.3 \text{ (hot)}$ |
 | **Density** | $\rho_{\text{air}} = 1.205 \frac{\text{kg}}{\text{m}^3} \text{ at } 20^\circ\text{C}$ <br> $\rho_{\text{water}} = 1000 \frac{\text{kg}}{\text{m}^3} \text{ at } 20^\circ\text{C}$ |
 
-## Quick-reference Formulas
-
-## Notes
+## Formulas
